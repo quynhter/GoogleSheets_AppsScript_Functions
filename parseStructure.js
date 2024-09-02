@@ -23,6 +23,7 @@ function parseStructure(num, cell) {
 
 // Output data
 // result = ["Classroom", "Broken tables"]
+
 // If you enter this formula "TRANSPOSE(parseStructure(num, cell))" in B2, you will get next output table
 //  | A      | B            | C
 // 1| Number | Place        | Deficiencies
