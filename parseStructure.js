@@ -4,8 +4,8 @@
 // 2| 1      | ..    | ..
 
 // Input data
-// num = 1 (from output table)
-// cell = [{"number": 1}, {"place": "Classroom"}, {"deficiencies": "Broken tables"}]
+// num = 1 (from output table, $A2)
+// cell = [{"number": 1}, {"place": "Classroom"}, {"deficiencies": "Broken tables"}] (from other table)
 
 function parseStructure(num, cell) {
   var result = [];
@@ -23,7 +23,7 @@ function parseStructure(num, cell) {
 
 // Output data
 // result = ["Classroom", "Broken tables"]
-// If you enter this formula "TRANSPOSE(parseStructure())" in B2, you will get next output table
+// If you enter this formula "TRANSPOSE(parseStructure(num, cell))" in B2, you will get next output table
 //  | A      | B            | C
 // 1| Number | Place        | Deficiencies
 // 2| 1      | Classroom    | Broken tables
